@@ -325,3 +325,33 @@
 .about .icon-box:hover h4 a {
   color: var(--accent-color);
 }
+
+#switcher {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 15px;
+}
+#switcher li {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin: 0 15px 15px 0;
+  border-radius: 30px;
+  border: 1px solid #09090921;
+  cursor: pointer;
+}
+
+#main {
+  background: #1e9c99;
+}
+#mainv2 {
+  background: #064d51;
+}
+#mainv3 {
+  background: #c0f2f3;
+}
+#mainv4 {
+  background: #81dbdb;
+}

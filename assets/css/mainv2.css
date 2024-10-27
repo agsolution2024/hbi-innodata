@@ -18,10 +18,10 @@ body {
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections  1e9c99 01e9c99*/
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #1e9c99; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #1e9c99; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --heading-color: #064d51; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #064d51; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -44,7 +44,7 @@ body {
 }
 
 .dark-background {
-  --background-color: #1e9c99;
+  --background-color: #064d51;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #1e9c99;
@@ -58,7 +58,7 @@ body {
   --background-color: #1e9c99;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #1e9c99;
+  --surface-color: #064d51;
   --contrast-color: #ffffff;
 }
 
@@ -112,7 +112,7 @@ h6 {
 .php-email-form .sent-message {
   display: none;
   color: #ffffff;
-  background: #1e9c99;
+  background: #064d51;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -186,7 +186,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #1e9c99;
+  --background-color: #064d51;
 }
 
 /*--------------------------------------------------------------
@@ -459,7 +459,7 @@ h6 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #1e9c99;
+  background: #064d51;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -505,12 +505,12 @@ h6 {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  background: #1e9c99;
+  background: #064d51;
 }
 
 #footer .footer-top .social-links a:hover {
   color: #fff;
-  background: #1e9c99;
+  background: #064d51;
   text-decoration: none;
 }
 
@@ -583,7 +583,7 @@ h6 {
   background: none;
   font-size: 16px;
   padding: 0 20px 2px 20px;
-  background: #1e9c99;
+  background: #064d51;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -594,7 +594,7 @@ h6 {
 }
 
 #footer .copyright {
-  border-top: 1px solid #1e9c99;
+  border-top: 1px solid #064d51;
   text-align: center;
   padding-top: 30px;
 }
@@ -1502,7 +1502,7 @@ section,
 }
 
 .pricing ul i {
-  color: #1e9c99;
+  color: #064d51;
   font-size: 24px;
   padding-right: 3px;
 }
@@ -1676,7 +1676,7 @@ section,
 
 .contact .info-box i {
   font-size: 32px;
-  color: #1e9c99;
+  color: #064d51;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #fbdad2;
@@ -1753,7 +1753,7 @@ section,
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #1e9c99;
+  border-color: #064d51;
 }
 
 .contact .php-email-form input {
@@ -1765,7 +1765,7 @@ section,
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #1e9c99;
+  background: #064d51;
   border: 0;
   padding: 10px 30px;
   border-radius: 4px;
@@ -1796,7 +1796,7 @@ section,
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #1e9c99;
+  background: #064d51;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -1844,16 +1844,16 @@ section,
 }
 
 .services .icon-box:hover {
-  background: #1e9c9aa6;
-  border-color: #1e9c9aa6;
+  background: #064d51;
+  border-color: #064d51;
 }
 
 .services .icon-box:hover .icon {
-  background: #1e9c9aa6;
+  background: #1e9c99;
 }
 
 .services .icon-box:hover .icon i {
-  color: #c0f2f3;
+  color: #064d51;
 }
 
 .services .icon-box:hover .icon::before {
@@ -1954,7 +1954,7 @@ section,
 --------------------------------------------------------------*/
 .cta {
   padding: 80px 0;
-  background: #1e9c99;
+  background: #064d51;
   background-image: url("../img/11-1.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
