@@ -1,21 +1,27 @@
+@font-face {
+  font-family: "ArialRoundedMTBold";
+  src: url("arial-rounded-mt-bold_ufonts.com_.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
-  font-family: "Cairo", "ArialRoundedMTBold", Arial, sans-serif !important;
+  font-family: "ArialRoundedMTBold", Arial, sans-serif !important;
 }
 
 /* Fonts */
 :root {
-  --default-font: "Cairo", "ArialRoundedMTBold", Arial, sans-serif;
-  --heading-font: "Cairo", "ArialRoundedMTBold", Arial, sans-serif;
-  --nav-font: "Cairo", "ArialRoundedMTBold", Arial, sans-serif;
+  --default-font: "ArialRoundedMTBold", Arial, sans-serif;
+  --heading-font: "ArialRoundedMTBold", Arial, sans-serif;
+  --nav-font: "ArialRoundedMTBold", Arial, sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections 0a254d 0a254d 00a254d*/
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections c0f2f3 c0f2f3 01e9c99*/
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #0a254d; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #0a254d; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --heading-color: #1e9c99; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #c0f2f3; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -23,11 +29,11 @@ body {
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #ffffff; /* The default color of the main navmenu links */
-  --nav-hover-color: #0762df; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #c0f2f3; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #0a254d; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #c0f2f3; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -38,10 +44,10 @@ body {
 }
 
 .dark-background {
-  --background-color: #0a254d;
+  --background-color: #c0f2f3;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #0a254d;
+  --surface-color: #c0f2f3;
   --contrast-color: #ffffff;
   background-image: url("../img/11.png");
   background-repeat: no-repeat;
@@ -49,10 +55,10 @@ body {
 }
 
 .bg-inno2 {
-  --background-color: #0a254d;
+  --background-color: #c0f2f3;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #0a254d;
+  --surface-color: #c0f2f3;
   --contrast-color: #ffffff;
 }
 
@@ -106,7 +112,7 @@ h6 {
 .php-email-form .sent-message {
   display: none;
   color: #ffffff;
-  background: #0a254d;
+  background: #c0f2f3;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -180,7 +186,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #0a254d;
+  --background-color: #1e9c99;
 }
 
 /*--------------------------------------------------------------
@@ -453,7 +459,7 @@ h6 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #0a254d;
+  background: #c0f2f3;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -465,7 +471,7 @@ h6 {
 
 #footer .footer-top .footer-info {
   margin-bottom: 15px;
-  background: #0e31669c;
+  background: #0b5453;
   /* border-top: 4px solid #00ff00 ; */
   text-align: center;
   padding: 30px 20px;
@@ -499,12 +505,12 @@ h6 {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  background: #0a254d;
+  background: #c0f2f3;
 }
 
 #footer .footer-top .social-links a:hover {
   color: #fff;
-  background: #0a254d;
+  background: #c0f2f3;
   text-decoration: none;
 }
 
@@ -528,7 +534,7 @@ h6 {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #0762df;
+  color: #c0f2f3;
   font-size: 18px;
   line-height: 1;
 }
@@ -577,7 +583,7 @@ h6 {
   background: none;
   font-size: 16px;
   padding: 0 20px 2px 20px;
-  background: #0a254d;
+  background: #1e9c99;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -588,7 +594,7 @@ h6 {
 }
 
 #footer .copyright {
-  border-top: 1px solid #0a254d;
+  border-top: 1px solid #c0f2f3;
   text-align: center;
   padding-top: 30px;
 }
@@ -836,7 +842,7 @@ section,
 
 .hero .btn-get-started {
   color: var(--contrast-color);
-  background: #0762df;
+  background: #1e9c99;
   font-family: var(--heading-font);
   font-weight: 400;
   font-size: 15px;
@@ -850,7 +856,7 @@ section,
 
 .hero .btn-get-started:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, #043f92, transparent 15%);
+  background: color-mix(in srgb, #c0f2f3, transparent 15%);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 }
 
@@ -1496,7 +1502,7 @@ section,
 }
 
 .pricing ul i {
-  color: #0a254d;
+  color: #c0f2f3;
   font-size: 24px;
   padding-right: 3px;
 }
@@ -1661,7 +1667,7 @@ section,
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
-  color: #0a254d;
+  color: #1e9c99;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
@@ -1670,7 +1676,7 @@ section,
 
 .contact .info-box i {
   font-size: 32px;
-  color: #0a254d;
+  color: #c0f2f3;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #fbdad2;
@@ -1699,7 +1705,7 @@ section,
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #0a254d;
+  background: #c0f2f3;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1712,7 +1718,7 @@ section,
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #0a254d;
+  background: #c0f2f3;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1732,7 +1738,7 @@ section,
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #0a254d;
+  border: 3px solid #c0f2f3;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -1747,7 +1753,7 @@ section,
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #0a254d;
+  border-color: #c0f2f3;
 }
 
 .contact .php-email-form input {
@@ -1759,7 +1765,7 @@ section,
 }
 
 .contact .php-email-form button[type="submit"] {
-  background: #0a254d;
+  background: #c0f2f3;
   border: 0;
   padding: 10px 30px;
   border-radius: 4px;
@@ -1768,7 +1774,7 @@ section,
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #0a254d;
+  background: #c0f2f3;
 }
 
 /*--------------------------------------------------------------
@@ -1777,6 +1783,7 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
 .services .icon-box {
   text-align: center;
   background: #fefefe;
@@ -1785,16 +1792,11 @@ section,
   transition: all ease-in-out 0.3s;
 }
 
-.services .icon-box:hover {
-  border-color: #0762df;
-  transform: scale(1.05); /* Enlarges the box */
-}
-
 .services .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #0a254d;
+  background: #c0f2f3;
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -1841,23 +1843,27 @@ section,
   margin-bottom: 0;
 }
 
+.services .icon-box:hover {
+  background: #1e9c9aa6;
+  border-color: #1e9c9aa6;
+}
+
 .services .icon-box:hover .icon {
-  background: #0b2341;
+  background: #1e9c9aa6;
 }
 
 .services .icon-box:hover .icon i {
-  color: #0762df;
+  color: #c0f2f3;
 }
 
 .services .icon-box:hover .icon::before {
-  background: #0762df;
+  background: #c0f2f3;
 }
 
 .services .icon-box:hover h4 a,
 .services .icon-box:hover p {
-  color: #0b2341;
+  color: #fff;
 }
-
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -1936,11 +1942,11 @@ section,
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #0a254d;
+  border: 1px solid #0006e3;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0a254d;
+  background-color: #0006e3;
 }
 
 /*--------------------------------------------------------------
@@ -1948,7 +1954,7 @@ section,
 --------------------------------------------------------------*/
 .cta {
   padding: 80px 0;
-  background: #0a254d;
+  background: #c0f2f3;
   background-image: url("../img/11-1.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -1974,37 +1980,15 @@ section,
   border-radius: 4px;
   transition: 0.5s;
   margin-top: 10px;
-  border: 2px solid #0a254d;
+  border: 2px solid #c0f2f3;
   color: #fff;
 }
 
 .cta .cta-btn:hover {
-  background: #0a254d;
-  border: 2px solid #0a254d;
+  background: #c0f2f3;
+  border: 2px solid #c0f2f3;
 }
 
 .section-title {
   font-weight: bold !important;
-}
-
-
-#hero .social-links a {
-  font-size: 16px;
-  display: inline-block;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 4px;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  background: transparent;
-}
-
-#hero .social-links a:hover {
-  color: #fff;
-  background: color-mix(in srgb, #043f92, transparent 15%);
-  text-decoration: none;
 }
