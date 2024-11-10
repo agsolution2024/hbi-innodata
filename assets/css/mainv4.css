@@ -28,7 +28,7 @@ body {
   --nav-dropdown-hover-color: #1266ff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
-/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+/*   background: linear-gradient(135deg, #6dd5ed, #428bb8);  Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
   --background-color: #f4f5fe;
@@ -878,7 +878,7 @@ section,
 }
 
 .hero .animated {
-  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  /* animation: up-down 2s ease-in-out infinite alternate-reverse both; */
 }
 
 @media (max-width: 640px) {

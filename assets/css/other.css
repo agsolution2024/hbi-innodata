@@ -398,3 +398,120 @@
     transform: scale(1.1);
   }
 }
+
+.image {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+  width: 70%;
+  border-radius: 20px;
+}
+
+.image1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+.image2 {
+  top: 10%;
+  right: 10%;
+}
+
+.image3 {
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image4 {
+  bottom: 10%;
+  left: 10%;
+}
+
+.image5 {
+  bottom: 10%;
+  right: 50%;
+  transform: translateX(50%);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes imageTransition {
+  0%,
+  16.67% {
+    opacity: 0;
+  }
+  20%,
+  36.67% {
+    opacity: 1;
+  }
+  40%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.container .image1 {
+  animation: imageTransition 20s infinite;
+  animation-delay: -1s; /* Start immediately */
+}
+
+.container .image2 {
+  animation: imageTransition 20s infinite 1s;
+  margin-right: 100px;
+}
+
+.container .image3 {
+  animation: imageTransition 20s infinite 4s;
+  margin-left: 100px;
+}
+
+.container .image4 {
+  animation: imageTransition 20s infinite 7s;
+  margin-top: -100px;
+}
+
+.container .image5 {
+  animation: imageTransition 20s infinite 10s;
+  margin-top: 100px;
+}
+.testt {
+  padding: 170px;
+}
+.typing-demo {
+  width: 80ch; /* Adjusted width to fit the entire text */
+  animation: typing 4s steps(44) infinite,
+    blink 0.5s step-end infinite alternate; /* Added 'infinite' to the typing animation */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80ch; /* Ensure this matches the width of the .typing-demo element */
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
