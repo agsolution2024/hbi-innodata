@@ -494,11 +494,39 @@
   padding: 170px;
 }
 .typing-demo {
-  width: 80ch; /* Adjusted width to fit the entire text */
+  width: 100%; /* Make width responsive */
+  max-width: 80ch; /* Maximum width */
   animation: typing 4s steps(44) infinite,
-    blink 0.5s step-end infinite alternate; /* Added 'infinite' to the typing animation */
+    blink 0.5s step-end infinite alternate;
   white-space: nowrap;
   overflow: hidden;
+  border-right: 2px solid; /* Cursor effect */
+  font-size: 4vw; /* Responsive font size */
+}
+
+/* Adjust font size for different screen sizes */
+@media (max-width: 1200px) {
+  .typing-demo {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .typing-demo {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .typing-demo {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .typing-demo {
+    font-size: 2vw;
+  }
 }
 
 @keyframes typing {
@@ -506,7 +534,7 @@
     width: 0;
   }
   to {
-    width: 80ch; /* Ensure this matches the width of the .typing-demo element */
+    width: 100%; /* Ensure this matches the width of the .typing-demo element */
   }
 }
 
