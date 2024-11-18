@@ -78,7 +78,7 @@
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about .content h3 {
+/* .about .content h3 {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -176,7 +176,7 @@
   .about .icon-boxes .col-md-6:nth-child(4) .icon-box {
     margin-top: 0;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Features Section
