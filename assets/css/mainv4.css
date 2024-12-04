@@ -526,7 +526,7 @@ h6 {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #1266ff;
+  color: #0358f6;
   font-size: 18px;
   line-height: 1;
 }
@@ -1779,7 +1779,7 @@ section,
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #4895c5;
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
   border-radius: 5px;
   transition: all 0.3s ease-out 0s;
   display: flex;
@@ -1789,10 +1789,11 @@ section,
   transform-style: preserve-3d;
   position: relative;
   z-index: 2;
+  border-radius: 50%;
 }
 
 .services .icon-box .icon i {
-  color: #fff;
+  color: var(--accent-color);
   font-size: 28px;
 }
 
@@ -1828,11 +1829,11 @@ section,
 }
 
 .services .icon-box:hover .icon {
-  background: #4895c5;
+  background-color: #1266ff;
 }
 
 .services .icon-box:hover .icon i {
-  color: #1266ff;
+  color: var(--contrast-color);
 }
 
 .services .icon-box:hover .icon::before {
