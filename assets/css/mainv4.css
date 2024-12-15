@@ -1816,7 +1816,7 @@ section,
 .services .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .services .icon-box h4 a {
@@ -1997,6 +1997,108 @@ section,
 }
 
 .about .btn-get-started {
+  color: #fff;
+  background: #1266ff;
+  font-family: var(--heading-font);
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  animation: fadeInUp 1s both 0.4s;
+}
+
+.page-title-mdbc {
+  position: relative;
+  background-image: url("../img/hero-carousel/hero-carousel-1.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 85px;
+}
+
+.page-title-cd {
+  position: relative;
+  background-image: url("../img/hero-carousel/hero-carousel-2.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 85px;
+}
+
+.page-title-hi {
+  position: relative;
+  background-image: url("../img/hero-carousel/hero-carousel-3.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 85px;
+}
+
+.page-title-bmas {
+  position: relative;
+  background-image: url("../img/hero-carousel/hero-carousel-4.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-top: 85px;
+}
+
+/*--------------------------------------------------------------
+# Features Section
+--------------------------------------------------------------*/
+.featuresPage .features-item + .features-item {
+  margin-top: 60px;
+}
+
+.featuresPage .features-item .content {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
+  color: color-mix(in srgb, var(--default-color), transparent 40%);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.featuresPage .features-item h3 {
+  font-weight: 700;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.featuresPage .features-item .more-btn {
+  background-color: var(--accent-color);
+  color: var(--contrast-color);
+  padding: 6px 30px;
+  border-radius: 6px;
+}
+
+.featuresPage .features-item .more-btn:hover {
+  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
+}
+
+.featuresPage .features-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.featuresPage .features-item ul li {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.featuresPage .features-item ul li:last-child {
+  padding-bottom: 0;
+}
+
+.featuresPage .features-item ul i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: var(--accent-color);
+}
+
+.featuresPage .features-item img {
+  border-radius: 15px;
+}
+.featuresPage .btn-get-started {
   color: #fff;
   background: #1266ff;
   font-family: var(--heading-font);

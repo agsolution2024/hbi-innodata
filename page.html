@@ -60,78 +60,57 @@
 
   <main class="main">
 
-    <div class="page-title dark-background page-title-hi" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8" style="background-color: rgba(0, 0, 0, 0.5);">
+    <!-- Features Section -->
+    <section id="featuresPage" class="featuresPage section light-background" style="margin-top: 70px;">
 
-              <h2>Hardware & Infrastructure</h2>
-              <p class="mb-0">
-                Odio et unde deleniti. Deserunt numquam exercitationem.
-                Officiis quo odio sint voluptas consequatur ut a odio
-                voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi
-                ratione sint. Sit quaerat ipsum dolorem.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2 id="pageTitle">Text</h2>
 
-    <section id="services" class="services">
+      </div><!-- End Section Title -->
+
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-cloud"></i></div>
-              <h4><a href="">In-House/Cloud Hosting (PaaS & SaaS)</a></h4>
-              <p></p>
+
+        <div class="row gy-4 justify-content-between features-item">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/hero-img2.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>Corporis temporibus maiores provident</h3>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              </p>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              </p>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              </p>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+              </p>
+              <a href="contactus.html" class="btn-get-started">Consult
+                Us</a>
             </div>
           </div>
 
+        </div><!-- Features Item -->
 
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-router"></i></div>
-              <h4><a href="">Network Design & Layout</a></h4>
-              <p></p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-person-gear"></i></div>
-              <h4><a href="">Systems Administration</a></h4>
-              <p></p>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-server"></i></div>
-              <h4><a href="">Server Preventive Maintenance</a></h4>
-              <p></p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-bricks"></i></div>
-              <h4><a href="">Firewall Configuration</a></h4>
-              <p></p>
-            </div>
-          </div>
-
-
-
-
-
-        </div>
 
       </div>
 
-    </section>
+    </section><!-- /Features Section -->
 
 
   </main>
@@ -217,6 +196,17 @@
   <script> window.chtlConfig = { chatbotId: "4971539686" } </script>
   <script async data-id="4971539686" id="chatling-embed-script" type="text/javascript"
     src="https://chatling.ai/js/embed.js"></script>
+
+  <script>
+    const url = new URL(window.location.href);
+    const optionValue = url.searchParams.get("option");
+    const pageTitle = document.getElementById("pageTitle");
+
+    if (optionValue) {
+      pageTitle.textContent = decodeURIComponent(optionValue);
+    }
+  </script>
+
 </body>
 
 </html>
