@@ -145,7 +145,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #4895c5;
+  --background-color: #3b82f6;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   color: var(--default-color);
@@ -178,7 +178,7 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #4895c5;
+  --background-color: #3b82f6;
 }
 
 /*--------------------------------------------------------------
