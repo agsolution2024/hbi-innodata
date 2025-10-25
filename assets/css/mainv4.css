@@ -21,7 +21,7 @@ body {
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #ffffff; /* The default color of the main navmenu links */
-  --nav-hover-color: #1266ff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #007cff; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -36,10 +36,10 @@ body {
 }
 
 .dark-background {
-  --background-color: #4895c5;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
-  --surface-color: #4895c5;
+  --background-color: #ffffff;
+  --default-color: #4a4a4a;
+  --heading-color: #4a4a4a;
+  --surface-color: #ffffff;
   --contrast-color: #ffffff;
   background-image: url("../img/11.png");
   background-repeat: no-repeat;
@@ -145,14 +145,15 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #3b82f6;
+  --background-color: rgba(255, 255, 255, 0.116);
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.116);
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
+  font-weight:600;
 }
 
 /* .header .logo {
@@ -178,7 +179,23 @@ h6 {
 /* Global Header on Scroll
 ------------------------------*/
 .scrolled .header {
-  --background-color: #3b82f6;
+  --background-color: #fff;
+  --default-color: #444444;
+  --heading-color: #444444;
+  color: #444444;
+  background-color: #fff;
+}
+
+/* Navigation colors when scrolled */
+.scrolled .navmenu a,
+.scrolled .navmenu a:focus {
+  color: #444444 !important;
+}
+
+.scrolled .navmenu li:hover > a,
+.scrolled .navmenu .active,
+.scrolled .navmenu .active:focus {
+  color: #007cff;
 }
 
 /*--------------------------------------------------------------
@@ -213,10 +230,10 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: color-mix(in srgb, var(--nav-color), transparent 20%);
+     color: #444444 !important; 
     font-size: 15px;
     padding: 0 2px;
-    font-family: var(--nav-font);
+    font-family: "Cairo", "ArialRoundedMTBold", Arial, sans-serif;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -256,7 +273,7 @@ h6 {
   .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-color);
+    color: #007cff;
   }
 
   .navmenu .dropdown ul {
@@ -353,7 +370,7 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
-    font-family: var(--nav-font);
+    font-family: "Poppins", "Cairo", Arial, sans-serif !important;
     font-size: 17px;
     font-weight: 500;
     display: flex;
@@ -1978,7 +1995,7 @@ section,
 #hero .social-links a {
   font-size: 16px;
   display: inline-block;
-  color: #fff;
+  color: #007cff;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
