@@ -4,10 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>BHI-Innodata</title>
+  <title>innodata</title>
   <meta name="description" content="" />
   <meta name="keywords" content="" />
-  <link href="assets/img/bhi-logo-only-HD.png" rel="icon" />
+  <link href="assets/img/innodatav2small.png" rel="icon" />
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
@@ -21,14 +21,16 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
   <link id="mainStylesheet" href="assets/css/mainv4.css?v1.0" rel="stylesheet" />
   <link href="assets/css/other.css?v1.0" rel="stylesheet" />
+  <link href="assets/css/enhanced-services.css?v1.0" rel="stylesheet" />
 </head>
 
+
 <body class="index-page">
-  <header id="header" class="header d-flex align-items-center fixed-top">
+   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img id="mainLogo" src="assets/img/bhi-logoHDv1.1.png" alt="" width="35%" /> </a>
+        <img id="mainLogo" src="assets/img/innodatav2.png" alt="" width="30%" /> </a>
       <nav id="navmenu" class="navmenu">
         <ul>
           <li class="dropdown">
@@ -52,6 +54,23 @@
           <li>
             <a class="nav-link nav-text" href="contactus.html">Contact Us</a>
           </li>
+
+
+          <select id="versionLogo" style="margin-top: 10px;" class="d-none">
+            <option value="v1">v1</option>
+            <option value="v2">v2</option>
+            <option value="v3">v3</option>
+            <option value="v4">v4</option>
+          </select>&nbsp;&nbsp;
+
+          <ul id="switcher" class="d-none">
+            <li id="" class="1">1</li>
+            <li id="" class="2">2</li>
+            <li id="" class="3">3</li>
+            <li id="" class="4">4</li>
+          </ul>
+
+
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -117,68 +136,85 @@
     </section><!-- End About Section -->
 
   </main>
-  <footer id="footer" class="footer dark-background">
-    <div class="footer-top">
+  <!-- New Enhanced Footer -->
+  <footer id="footer-new" class="enhanced-footer">
+    <div class="footer-content">
       <div class="container">
-        <div class="row">
-
-          <div class="col-lg-6 col-md-6">
-            <div class="footer-info">
-              <h3>Innodata Business & Software Solutions, Inc</h3>
-              <p class="pb-3"><em>“Precision Advantage thru Dynamic Business Intelligence”</em></p>
-              <!-- <p>
-                  A108 Adam Street <br>
-                  NY 535022, USA<br><br> -->
-              <strong>Call:</strong> 403 744 5358<br>
-              <strong>Email:</strong> info@systemasolutions.ca<br>
-              </p>
-              <div class="social-links mt-3">
-                <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> -->
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <!-- <a href="#" class="google-plus"><i class="bi bi-skype"></i></a> -->
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <div class="row align-items-center">
+          <!-- Company Info -->
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="footer-brand">
+              <img src="assets/img/innodatav2small.png" alt="Innodata Logo" class="footer-logo" />
+              <div class="contact-info">
+                <div class="contact-item">
+                  <i class="bi bi-telephone"></i>
+                  <span>403 744 5358</span>
+                </div>
+                <div class="contact-item">
+                  <i class="bi bi-envelope"></i>
+                  <span>info@systemasolutions.ca</span>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Microsoft Dynamics 365 Business Central</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Custom Development</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Hardware & Infrastructure</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Hardware & Infrastructure</a></li>
-            </ul>
+          <!-- Quick Links -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="footer-section">
+              <h5>Our Services</h5>
+              <ul class="footer-links">
+                <li><a href="mdbc.html">Microsoft Dynamics 365</a></li>
+                <li><a href="cd.html">Custom Development</a></li>
+                <li><a href="hi.html">Hardware & Infrastructure</a></li>
+                <li><a href="bmas.html">Business Advisory</a></li>
+              </ul>
+            </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-
-            <ul>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">About Us</a></li>
-              <li><i class="bi bi-chevron-right"></i> <a href="#">Contact Us</a></li>
-            </ul>
+          <!-- Company Links & Social -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="footer-section">
+              <h5>Company</h5>
+              <ul class="footer-links">
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="#services">Services</a></li>
+              </ul>
+              <div class="social-section">
+                <h6>Connect With Us</h6>
+                <div class="social-links">
+                  <a href="#" class="social-link facebook" aria-label="Facebook">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                  <a href="#" class="social-link instagram" aria-label="Instagram">
+                    <i class="bi bi-instagram"></i>
+                  </a>
+                  <a href="#" class="social-link linkedin" aria-label="LinkedIn">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="col-lg-2 col-md-6 footer-newsletter">
-            <img src="assets/img/innologowhite.png" width="50%" />
-
-
-          </div>
-
         </div>
       </div>
     </div>
 
-    <div class="container">
-      <div class="copyright">
-        BHI-Innodata is copyrighted since 2006 and trademarked through the Linux Mark
-        Institute.<strong><span></span></strong>. All Rights Reserved
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <p class="copyright">© 2025 innodata Business & Software Solutions. All Rights Reserved</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="powered-by">Transforming Business Through Technology</p>
+          </div>
+        </div>
       </div>
-
     </div>
   </footer>
+
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>

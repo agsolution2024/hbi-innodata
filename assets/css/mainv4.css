@@ -10,10 +10,10 @@ body {
 }
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections 4895c5 4895c5 4895c5 01e9c99*/
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections 007cff 007cff 007cff 01e9c99*/
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #4895c5; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #4895c5; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --heading-color: #007cff; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #007cff; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -25,7 +25,7 @@ body {
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #1266ff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-dropdown-hover-color: #007cff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /*   background: linear-gradient(135deg, #6dd5ed, #428bb8);  Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -47,10 +47,10 @@ body {
 }
 
 .bg-inno2 {
-  --background-color: #4895c5;
+  --background-color: #007cff;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #4895c5;
+  --surface-color: #007cff;
   --contrast-color: #ffffff;
 }
 
@@ -104,7 +104,7 @@ h6 {
 .php-email-form .sent-message {
   display: none;
   color: #ffffff;
-  background: #4895c5;
+  background: #007cff;
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
@@ -468,7 +468,7 @@ h6 {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #4895c5;
+  background: #007cff;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
@@ -514,12 +514,12 @@ h6 {
   width: 36px;
   height: 36px;
   transition: 0.3s;
-  background: #1266ff;
+  background: #007cff;
 }
 
 #footer .footer-top .social-links a:hover {
   color: #fff;
-  background: #1266ff;
+  background: #007cff;
   text-decoration: none;
 }
 
@@ -543,7 +543,7 @@ h6 {
 
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
-  color: #0358f6;
+  color: #007cff;
   font-size: 18px;
   line-height: 1;
 }
@@ -566,7 +566,7 @@ h6 {
 }
 
 #footer .footer-top .footer-links ul a:hover {
-  color: #1266ff;
+  color: #007cff;
 }
 
 #footer .footer-top .footer-newsletter form {
@@ -592,7 +592,7 @@ h6 {
   background: none;
   font-size: 16px;
   padding: 0 20px 2px 20px;
-  background: #4895c5;
+  background: #007cff;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -603,7 +603,7 @@ h6 {
 }
 
 #footer .copyright {
-  border-top: 1px solid #4895c5;
+  border-top: 1px solid #007cff;
   text-align: center;
   padding-top: 30px;
 }
@@ -669,7 +669,7 @@ h6 {
 
 .scroll-top i {
   font-size: 24px;
-  color: #1266ff;
+  color: #007cff;
   line-height: 0;
 }
 
@@ -885,7 +885,7 @@ section,
 
 .hero .btn-get-started {
   color: #fff;
-  background: #1266ff;
+  background: #007cff;
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 15px;
@@ -1056,7 +1056,7 @@ section,
 }
 
 .about .icon-box:hover i {
-  background-color: #1266ff;
+  background-color: #007cff;
   color: var(--contrast-color);
 }
 
@@ -1490,7 +1490,7 @@ section,
 }
 
 .pricing ul i {
-  color: #4895c5;
+  color: #007cff;
   font-size: 24px;
   padding-right: 3px;
 }
@@ -1655,7 +1655,7 @@ section,
 # Contact
 --------------------------------------------------------------*/
 .contact .info-box {
-  color: #4895c5;
+  color: #007cff;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 20px 0 30px 0;
@@ -1664,7 +1664,7 @@ section,
 
 .contact .info-box i {
   font-size: 32px;
-  color: #4895c5;
+  color: #007cff;
   border-radius: 50%;
   padding: 8px;
   border: 2px dotted #fbdad2;
@@ -1693,7 +1693,7 @@ section,
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #4895c5;
+  background: #007cff;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1706,7 +1706,7 @@ section,
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #4895c5;
+  background: #007cff;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1726,7 +1726,7 @@ section,
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #4895c5;
+  border: 3px solid #007cff;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -1741,7 +1741,7 @@ section,
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #4895c5;
+  border-color: #007cff;
 }
 
 .contact .php-email-form input {
@@ -1754,7 +1754,7 @@ section,
 
 .contact .php-email-form button[type="submit"] {
   color: #fff;
-  background: #1266ff;
+  background: #007cff;
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 15px;
@@ -1769,7 +1769,7 @@ section,
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-  background: #4895c5;
+  background: #007cff;
 }
 
 /*--------------------------------------------------------------
@@ -1789,7 +1789,7 @@ section,
 }
 
 .services .icon-box:hover {
-  border-color: #1266ff;
+  border-color: #007cff;
   transform: scale(1.05); /* Enlarges the box */
 }
 
@@ -1837,7 +1837,7 @@ section,
 }
 
 .services .icon-box h4 a {
-  color: #4895c5;
+  color: #007cff;
 }
 
 .services .icon-box p {
@@ -1847,7 +1847,7 @@ section,
 }
 
 .services .icon-box:hover .icon {
-  background-color: #1266ff;
+  background-color: #007cff;
 }
 
 .services .icon-box:hover .icon i {
@@ -1860,7 +1860,7 @@ section,
 
 .services .icon-box:hover h4 a,
 .services .icon-box:hover p {
-  color: #4895c5;
+  color: #007cff;
 }
 
 /*--------------------------------------------------------------
@@ -1940,11 +1940,11 @@ section,
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #0006e3;
+  border: 1px solid #007cff;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0006e3;
+  background-color: #007cff;
 }
 
 /*--------------------------------------------------------------
@@ -1952,7 +1952,7 @@ section,
 --------------------------------------------------------------*/
 .cta {
   padding: 80px 0;
-  background: #4895c5;
+  background: #007cff;
   background-image: url("../img/11-1.png");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -1978,14 +1978,14 @@ section,
   border-radius: 4px;
   transition: 0.5s;
   margin-top: 10px;
-  border: 2px solid #1266ff;
-  background-color: #1266ff;
+  border: 2px solid #007cff;
+  background-color: #007cff;
   color: #fff;
 }
 
 .cta .cta-btn:hover {
-  background: #4895c5;
-  border: 2px solid #4895c5;
+  background: #007cff;
+  border: 2px solid #007cff;
 }
 
 .section-title {
@@ -2009,13 +2009,13 @@ section,
 
 #hero .social-links a:hover {
   color: #fff;
-  background: color-mix(in srgb, #1266ff, transparent 15%);
+  background: color-mix(in srgb, #007cff, transparent 15%);
   text-decoration: none;
 }
 
 .about .btn-get-started {
   color: #fff;
-  background: #1266ff;
+  background: #007cff;
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 15px;
@@ -2117,7 +2117,7 @@ section,
 }
 .featuresPage .btn-get-started {
   color: #fff;
-  background: #1266ff;
+  background: #007cff;
   font-family: var(--heading-font);
   font-weight: 500;
   font-size: 15px;
