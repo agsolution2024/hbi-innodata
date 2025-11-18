@@ -31,7 +31,7 @@ body {
 /*   background: linear-gradient(135deg, #6dd5ed, #428bb8);  Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #f4f5fe;
+  --background-color: #f4f5fe82;
   --surface-color: #ffffff;
 }
 
@@ -149,7 +149,7 @@ h6 {
   --default-color: #ffffff;
   --heading-color: #ffffff;
   color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.116);
+  /* background-color: rgba(255, 255, 255, 0.116); */
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -337,7 +337,7 @@ h6 {
 
 @media (max-width: 1199px) {
   .mobile-nav-toggle {
-    color: var(--nav-color);
+    color: #444444;
     font-size: 28px;
     line-height: 0;
     margin-right: 10px;
@@ -438,7 +438,7 @@ h6 {
   }
 
   .mobile-nav-active .mobile-nav-toggle {
-    color: #fff;
+    color: #444;
     position: absolute;
     font-size: 32px;
     top: 15px;

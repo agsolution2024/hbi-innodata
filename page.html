@@ -11,9 +11,6 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
   <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
@@ -91,36 +88,12 @@
 
         <div class="row gy-4 justify-content-between features-item">
 
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
             <img src="assets/img/hero-img2.png" class="img-fluid" alt="">
           </div>
 
-          <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content">
-              <h3>Corporis temporibus maiores provident</h3>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-              </p>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-              </p>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-              </p>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-                voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-              </p>
-              <a href="contactus.html" class="btn-get-started">Consult
-                Us</a>
-            </div>
+          <div class="col-lg-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content" id="pageContent"></div>
           </div>
 
         </div><!-- Features Item -->
@@ -235,9 +208,143 @@
     const url = new URL(window.location.href);
     const optionValue = url.searchParams.get("option");
     const pageTitle = document.getElementById("pageTitle");
+    const pageContent = document.getElementById("pageContent");
 
     if (optionValue) {
       pageTitle.textContent = decodeURIComponent(optionValue);
+      
+      // Use switch case to handle different page types
+      switch (decodeURIComponent(optionValue).toLowerCase()) {
+        case "service":
+          pageContent.innerHTML = `
+            <h3>Smarter Systems for Seamless Service Delivery</h3>
+            <p>
+              Innodata empowers service-based organizations to run smarter, faster, and more efficiently 
+              through <strong>Microsoft Dynamics 365 ERP</strong> and expert advisory support. We integrate project 
+              management, billing, and reporting into one cohesive system so your team can focus less on 
+              admin tasks and more on client success.
+            </p>
+            <p>
+              Our <strong>Business Management and Advisory Services</strong> align technology with your company's 
+              vision, ensuring every process works toward measurable growth. From optimizing resource 
+              allocation to implementing data-driven dashboards, we help you uncover insights that turn 
+              service challenges into opportunities.
+            </p>
+            <p>
+              With end-to-end ERP implementation and hands-on guidance, Innodata equips your business to 
+              deliver consistency, transparency, and excellence at every client touchpoint. Together, we 
+              transform operations into a powerful engine of trust, performance, and long-term scalability.
+            </p>
+            <p>
+              <b>Partner with Innodata to streamline, scale, and strengthen your service business.</b>
+            </p>
+            <a href="contactus.html" class="btn-get-started">Consult Us</a>
+          `;
+          break;
+
+        case "retail":
+          pageContent.innerHTML = `
+            <h3>Transforming Retail Operations Through Connected Intelligence</h3>
+            <p>
+              Innodata helps retailers modernize their operations with <strong>Microsoft Dynamics 365 ERP</strong> and 
+              expert business advisory services. We unify inventory, point-of-sale, and financial systems to 
+              create one seamless platform providing end-to-end visibility and real-time insights across every 
+              store and channel.
+            </p>
+            <p>
+              Our consultants work closely with retail leaders to streamline supply chains, reduce costs, and 
+              enhance the customer experience. Through data-driven reporting and process automation, we 
+              help you anticipate demand, manage stock more efficiently, and boost profitability with precision.
+            </p>
+            <p>
+              Whether you're managing a single store or a nationwide chain, Innodata's ERP and advisory 
+              solutions empower your retail business to stay agile, competitive, and customer-focused in a 
+              rapidly changing market.
+            </p>
+            <p>
+              <b>Ready to bring smarter systems to your retail operations?</b>
+            </p>
+            <a href="contactus.html" class="btn-get-started">Consult Us</a>
+          `;
+          break;
+
+        case "medical":
+          pageContent.innerHTML = `
+            <h3>Transforming Healthcare Through Intelligent Systems</h3>
+            
+            <p>
+              Innodata helps healthcare organizations modernize operations with <strong>Microsoft Dynamics 365 ERP</strong> 
+              and tailored business advisory solutions.
+            </p>
+            
+            <p>
+              We unify <strong>clinical</strong>, <strong>financial</strong>, and <strong>administrative systems</strong> 
+              to improve coordination, compliance, and patient outcomes, all within one secure digital platform.
+            </p>
+            
+            <p>
+              Our ERP implementation supports end-to-end visibility across:
+              <br>• Procurement processes
+              <br>• Billing systems
+              <br>• Patient management workflows
+              <br>• Compliance tracking
+              <br>• Quality assurance protocols
+            </p>
+            
+            <p>
+              This enables hospitals and clinics to <strong>minimize errors</strong>, <strong>reduce operational costs</strong>, 
+              and ensure timely service delivery without compromising care quality.
+            </p>
+            
+            <p>
+              Through our <strong>Business Management and Advisory Services</strong>, we assist healthcare leaders in:
+              <br>• Re-engineering workflows
+              <br>• Adopting automation solutions
+              <br>• Establishing data-driven decision frameworks
+              <br>• Creating patient-centered ecosystems
+            </p>
+            
+            <p>
+              Our approach ensures every process, from scheduling to reporting, contributes to a more efficient, 
+              patient-centered ecosystem.
+            </p>
+            
+       <p>
+                With Innodata as your transformation partner, your healthcare organization gains a resilient, 
+                compliant, and future-ready foundation that strengthens both operational performance and patient trust.
+              </p>
+          
+            
+     
+              <p>
+                <b>Ready to elevate your healthcare operations?</b>
+              </p>
+      
+           
+              <a href="contactus.html" class="btn-get-started">Consult Us</a>
+           
+          `;
+          break;
+
+        default:
+          pageContent.innerHTML = `
+            <h3>Corporis temporibus maiores provident</h3>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            </p>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            </p>
+            <p>
+              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+              voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+            </p>
+            <a href="contactus.html" class="btn-get-started">Consult Us</a>
+          `;
+          break;
+      }
     }
   </script>
 
