@@ -18,6 +18,7 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
   <link id="mainStylesheet" href="assets/css/mainv4.css?v1.0" rel="stylesheet" />
   <link href="assets/css/other.css?v1.0" rel="stylesheet" />
+  <link href="assets/css/page-modern.css?v1.0" rel="stylesheet" />
   <link href="assets/css/enhanced-services.css?v1.0" rel="stylesheet" />
 </head>
 
@@ -85,20 +86,22 @@
       </div><!-- End Section Title -->
 
       <div class="container">
-
-        <div class="row gy-4 justify-content-between features-item">
-
-          <div class="col-lg-5" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/hero-img2.png" class="img-fluid" alt="">
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-11">
+            <div class="features-item-modern">
+              <div class="row gy-4 justify-content-between align-items-center">
+                <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
+                  <img src="assets/img/hero-img2.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+                  <div class="content" id="pageContent">
+                    <!-- Content is dynamically inserted here -->
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
-          <div class="col-lg-7 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
-            <div class="content" id="pageContent"></div>
-          </div>
-
-        </div><!-- Features Item -->
-
-
+        </div>
       </div>
 
     </section><!-- /Features Section -->
@@ -238,7 +241,7 @@
             <p>
               <b>Partner with Innodata to streamline, scale, and strengthen your service business.</b>
             </p>
-            <a href="contactus.html" class="btn-get-started">Consult Us</a>
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
           `;
           break;
 
@@ -264,7 +267,7 @@
             <p>
               <b>Ready to bring smarter systems to your retail operations?</b>
             </p>
-            <a href="contactus.html" class="btn-get-started">Consult Us</a>
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
           `;
           break;
 
@@ -321,8 +324,862 @@
               </p>
       
            
-              <a href="contactus.html" class="btn-get-started">Consult Us</a>
+              <a href="contactus.html" class="btn-get-started">Consult With Us</a>
            
+          `;
+          break;
+
+        case "automotive":
+          pageContent.innerHTML = `
+            <h3>Driving Efficiency and Innovation Across the Automotive Industry</h3>
+            
+            <p>
+              Innodata empowers automotive companies to streamline operations and accelerate growth with 
+              <strong>Microsoft Dynamics 365 ERP</strong> and specialized business advisory solutions. We integrate 
+              production, inventory, and supply chain systems into one cohesive platform, designed to deliver 
+              real-time visibility and control from the factory floor to the showroom.
+            </p>
+            
+            <p>
+              Our ERP solutions help manufacturers and distributors optimize every stage of their operations. 
+              From materials planning to quality assurance, we enable businesses to reduce downtime, 
+              minimize waste, and maintain consistent production output while meeting regulatory standards.
+            </p>
+            
+            <p>
+              Through our <strong>Business Management and Advisory Services</strong>, we guide automotive leaders in 
+              adopting digital tools, re-engineering workflows, and leveraging analytics for smarter 
+              decision-making. Our experts ensure that every process contributes to better efficiency, improved 
+              product delivery, and enhanced customer satisfaction.
+            </p>
+            
+            <p>
+              With Innodata as your strategic partner, your automotive business gains the agility to adapt to 
+              shifting market demands, the data to innovate faster, and the structure to sustain long-term 
+              operational excellence.
+            </p>
+            
+            <p>
+              <b>Ready to accelerate your business performance?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "restaurant":
+          pageContent.innerHTML = `
+            <h3>Streamlining Restaurant Operations for Consistency and Growth</h3>
+            
+            <p>
+              Innodata helps restaurant groups and hospitality businesses strengthen their operations with 
+              <strong>Microsoft Dynamics 365 ERP</strong> and expert advisory support. We bring together finance, 
+              inventory, and procurement systems into one connected platform that makes daily management 
+              easier and more efficient.
+            </p>
+            
+            <p>
+              Our ERP solutions automate core restaurant processes such as supply forecasting, purchasing, 
+              and sales tracking. This gives owners and managers real-time visibility into performance, helps 
+              them maintain healthy margins, and ensures smooth coordination across multiple locations.
+            </p>
+            
+            <p>
+              Through our <strong>Business Management and Advisory Services</strong>, we work closely with restaurant 
+              operators to refine workflows, improve reporting accuracy, and boost profitability through 
+              informed decision-making. Every recommendation is designed to support growth while keeping 
+              customer satisfaction at the heart of operations.
+            </p>
+            
+            <p>
+              With Innodata as your partner, your restaurant gains a reliable digital foundation that simplifies 
+              operations, reduces waste, and supports long-term scalability. Together, we help you run a 
+              smarter and more profitable business.
+            </p>
+            
+            <p>
+              <b>Ready to optimize your restaurant operations?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "logistics":
+          pageContent.innerHTML = `
+            <h3>Delivering Efficiency and Visibility Across Every Mile</h3>
+            
+            <p>
+              Innodata helps logistics and distribution companies gain full control over their operations through 
+              <strong>Microsoft Dynamics 365 ERP</strong> and professional advisory support. We connect your 
+              warehousing, transportation, and finance systems into one platform that simplifies management 
+              and strengthens coordination.
+            </p>
+            
+            <p>
+              Our ERP solutions improve route planning, shipment tracking, and warehouse monitoring, 
+              allowing your team to deliver faster and reduce operational bottlenecks. Real-time dashboards 
+              provide insight into costs, performance, and capacity, helping you make smarter, faster decisions.
+            </p>
+            
+            <p>
+              Through our <strong>Business Management and Advisory Services</strong>, we work with logistics leaders to 
+              redesign processes, automate reporting, and align systems with long-term growth goals. Every 
+              implementation is tailored to enhance productivity, accuracy, and customer satisfaction.
+            </p>
+            
+            <p>
+              With Innodata as your technology partner, your logistics operations become leaner, more 
+              transparent, and ready to scale, turning every delivery into an opportunity for excellence.
+            </p>
+            
+            <p>
+              <b>Ready to strengthen your logistics performance?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "discreet manufacturing":
+          pageContent.innerHTML = `
+            <h3>Building Smarter Production Systems for Modern Manufacturers</h3>
+            
+            <p>
+              Innodata helps manufacturing companies modernize their operations through <strong>Microsoft 
+              Dynamics 365 ERP</strong> and strategic advisory services. We connect every part of your production 
+              cycle, from materials planning to final delivery, into one integrated system that improves visibility, 
+              accuracy, and control.
+            </p>
+            
+            <p>
+              Our ERP solutions streamline essential processes such as inventory management, production 
+              scheduling, and cost tracking. This allows manufacturers to minimize downtime, eliminate 
+              bottlenecks, and maintain consistent product quality while optimizing resources.
+            </p>
+            
+            <p>
+              Through our <strong>Business Management and Advisory Services</strong>, we work closely with 
+              manufacturing leaders to identify inefficiencies, implement automation, and create strategies that 
+              align technology with long-term business goals. Our guidance combines industry expertise with 
+              practical operational insight.
+            </p>
+            
+            <p>
+              With Innodata as your transformation partner, your organization gains a strong digital foundation 
+              that supports continuous improvement, faster innovation, and lasting competitiveness in the 
+              market.
+            </p>
+            
+            <p>
+              <b>Ready to modernize your manufacturing operations?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "website":
+          pageContent.innerHTML = `
+            <h3>Professional Websites Built for Performance and Growth</h3>
+            
+            <p>
+              Innodata develops custom websites that help businesses strengthen their online presence and 
+              deliver a smooth experience for their customers. We design and build websites that are fast, 
+              secure, and aligned with the goals of your organization. Every project is crafted to reflect your 
+              brand while supporting the functions you need for day to day operations.
+            </p>
+            
+            <p>
+              Our development team focuses on usability, visual clarity, and reliable performance across all 
+              devices. We build websites that are easy to navigate, simple to maintain, and optimized for 
+              search visibility. You get a platform that not only looks professional but also supports your 
+              business growth.
+            </p>
+            
+            <p>
+              Through our advisory approach, we work closely with your team to understand your needs and 
+              turn them into a functional and effective website. Whether you require a corporate site, an online 
+              catalog, or a custom web portal, we create solutions that match your processes and support long 
+              term success.
+            </p>
+            
+            <p>
+              With Innodata, your website becomes a powerful tool that represents your brand, supports your 
+              operations, and creates a strong impression for your customers.
+            </p>
+            
+            <p>
+              <b>Ready to build a website that works for your business?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "mobile app":
+          pageContent.innerHTML = `
+            <h3>Custom Mobile Applications Designed for Real Business Results</h3>
+            
+            <p>
+              Innodata develops mobile applications that help businesses improve efficiency, strengthen 
+              customer engagement, and support operations on the go. We build apps that are secure, intuitive 
+              to use, and tailored to the unique needs of your organization. Our goal is to create tools that 
+              make work easier and deliver value from day one.
+            </p>
+            
+            <p>
+              Our development team designs mobile apps with clear interfaces, smooth navigation, and reliable 
+              performance on both Android and iOS devices. We make sure your app works well in real world 
+              conditions, from offline capability to fast loading times, so your users can always rely on it.
+            </p>
+            
+            <p>
+              Through our consultative approach, we take time to understand your workflows, requirements, 
+              and long term goals before writing a single line of code. Whether you need an internal operations 
+              app, a customer facing platform, or a specialized solution for your industry, we deliver a product 
+              that aligns with your processes and supports your vision.
+            </p>
+            
+            <p>
+              With Innodata, your mobile app becomes a practical tool that enhances productivity, improves 
+              communication, and helps your business operate with greater flexibility.
+            </p>
+            
+            <p>
+              <b>Ready to build a mobile app for your organization?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "financial system":
+          pageContent.innerHTML = `
+            <h3>Reliable Financial Systems Built for Accuracy and Control</h3>
+            
+            <p>
+              Innodata develops custom financial systems that help businesses manage accounting, 
+              budgeting, and financial reporting with clarity and precision. We create platforms that improve 
+              oversight, reduce manual work, and ensure that financial data is accurate and easy to access. 
+              Our solutions support both day to day transactions and long term financial planning.
+            </p>
+            
+            <p>
+              Our systems are designed to simplify complex financial processes. From automated bookkeeping 
+              and invoice management to real time dashboards and audit ready reports, we build tools that 
+              allow your team to make informed decisions with confidence. Every feature is structured to 
+              improve compliance and provide a clear view of your financial health.
+            </p>
+            
+            <p>
+              We work closely with your finance team to understand your workflow, priorities, and industry 
+              requirements. This allows us to design a system that fits your organization and aligns with your 
+              internal controls. Whether you operate a small business or a large enterprise, we create financial 
+              tools that scale with your growth.
+            </p>
+            
+            <p>
+              With Innodata, your financial system becomes a dependable foundation for transparency, 
+              accountability, and smarter planning across your entire organization.
+            </p>
+            
+            <p>
+              <b>Ready to upgrade your financial operations?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "purchasing system":
+          pageContent.innerHTML = `
+            <h3>Smart Purchasing Systems That Improve Control and Efficiency</h3>
+            
+            <p>
+              Innodata builds purchasing systems that help businesses manage procurement with accuracy, 
+              transparency, and better cost control. We create tools that organize supplier information, 
+              streamline purchase requests, and track every transaction from start to finish. Our goal is to help 
+              your organization maintain a smooth and well managed purchasing process.
+            </p>
+            
+            <p>
+              Our systems make it easier to monitor orders, compare supplier performance, and manage 
+              approvals without unnecessary delays. Automated tracking and clear reporting give your team 
+              real time visibility into spending and order status. This reduces the risk of errors and ensures that 
+              purchasing decisions are made with complete information.
+            </p>
+            
+            <p>
+              We work closely with your procurement and finance teams to design a solution that matches your 
+              workflow and supports your internal policies. Whether you handle simple purchases or complex 
+              multi level requests, we build systems that fit your structure and scale with your growth.
+            </p>
+            
+            <p>
+              With Innodata, your purchasing process becomes more organized, more consistent, and fully 
+              aligned with your operational goals.
+            </p>
+            
+            <p>
+              <b>Ready to improve your purchasing operations?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "point-of-sale":
+          pageContent.innerHTML = `
+            <h3>Reliable Point of Sale Systems for Smooth and Accurate Transactions</h3>
+            
+            <p>
+              Innodata develops point of sale systems that help businesses manage sales, inventory, and daily 
+              operations with speed and accuracy. We create solutions that support quick transactions, clear 
+              reporting, and seamless coordination between front end and back office processes. Our systems 
+              are designed to work well in fast paced environments.
+            </p>
+            
+            <p>
+              Our point of sale platforms simplify the checkout experience and ensure that every sale is 
+              recorded correctly. Real time updates allow your team to monitor stock levels, track performance, 
+              and identify trends across multiple branches. This helps reduce errors and supports better 
+              planning for future demand.
+            </p>
+            
+            <p>
+              We work closely with retailers, restaurants, and service businesses to design POS systems that 
+              match the way they operate. Whether you need support for multiple terminals, mobile checkout, 
+              or integrated inventory tracking, we build solutions that fit your workflow and support your growth.
+            </p>
+            
+            <p>
+              With Innodata, your point of sale system becomes a dependable tool that improves efficiency, 
+              enhances customer experience, and strengthens your overall operations.
+            </p>
+            
+            <p>
+              <b>Ready to upgrade your point of sale process?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "customer relationship management":
+          pageContent.innerHTML = `
+            <h3>CRM Solutions That Strengthen Customer Connections and Sales Performance</h3>
+            
+            <p>
+              Innodata builds custom CRM systems that help businesses manage leads, track customer 
+              interactions, and improve the overall sales process. We design platforms that gather important 
+              data in one place and give your team a clear view of every customer relationship. This helps you 
+              respond faster, serve better, and build long term trust.
+            </p>
+            
+            <p>
+              Our CRM solutions support sales forecasting, pipeline tracking, and activity monitoring. With real 
+              time insights, your team can focus on high value opportunities and make decisions based on 
+              accurate information. Automated reminders and organized records also help reduce missed 
+              follow ups and improve customer satisfaction.
+            </p>
+            
+            <p>
+              We work closely with your sales, marketing, and support teams to understand how they operate 
+              and what tools they need. This allows us to create a CRM system that fits your workflow and 
+              enhances your ability to manage customers from first contact to ongoing service.
+            </p>
+            
+            <p>
+              With Innodata, your CRM becomes a dependable tool that supports sales growth, improves team 
+              coordination, and strengthens your relationship with every customer.
+            </p>
+            
+            <p>
+              <b>Ready to improve the way you manage customer relationships?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "human resource management system":
+          pageContent.innerHTML = `
+            <h3>HR Systems That Support People, Processes, and Organizational Growth</h3>
+            
+            <p>
+              Innodata develops human resource management systems that help organizations manage 
+              employee information, attendance, performance, and day to day HR tasks with accuracy and 
+              convenience. We create platforms that bring HR processes into one place and support both 
+              employees and HR teams.
+            </p>
+            
+            <p>
+              Our HR systems simplify important activities such as leave requests, employee onboarding, 
+              performance reviews, and records management. Real time data helps HR leaders make informed 
+              decisions and maintain compliance with internal policies. Automated workflows also reduce 
+              paperwork and free up time for more strategic work.
+            </p>
+            
+            <p>
+              We work closely with HR departments to understand their challenges and requirements. This 
+              allows us to design a system that fits your organization and supports your overall employee 
+              experience. Whether you need a simple HR tool or a full end to end solution, we build systems 
+              that match your structure and goals.
+            </p>
+            
+            <p>
+              With Innodata, your HR management system becomes an effective tool that improves efficiency, 
+              strengthens employee engagement, and helps your organization operate with clarity and 
+              consistency.
+            </p>
+            
+            <p>
+              <b>Ready to elevate your HR processes?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "timekeeping & payroll":
+          pageContent.innerHTML = `
+            <h3>Accurate Timekeeping and Payroll Systems for Smooth HR Operations</h3>
+            
+            <p>
+              Innodata creates timekeeping and payroll systems that help organizations manage attendance, 
+              work hours, and salary processing with accuracy and reliability. We build tools that reduce 
+              manual work, prevent errors, and ensure employees receive correct and timely compensation.
+            </p>
+            
+            <p>
+              Our systems support biometric integration, shift scheduling, overtime tracking, and automated 
+              payroll calculations. Real time data helps HR teams stay updated and gives management a clear 
+              view of workforce activity. With automated workflows and organized records, your team can focus 
+              on more meaningful tasks instead of repetitive administrative work.
+            </p>
+            
+            <p>
+              We work closely with HR and finance teams to design systems that fit your structure and comply 
+              with company policies. Every feature is shaped around your needs, from pay rate setups to 
+              reporting requirements. This ensures that your timekeeping and payroll processes remain 
+              consistent even as your organization grows.
+            </p>
+            
+            <p>
+              With Innodata, you gain a dependable system that strengthens accuracy, improves efficiency, 
+              and supports a smooth and transparent payroll cycle.
+            </p>
+            
+            <p>
+              <b>Ready to simplify your timekeeping and payroll process?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "inventory system":
+          pageContent.innerHTML = `
+            <h3>Inventory Systems That Improve Accuracy and Keep Your Operations on Track</h3>
+            
+            <p>
+              Innodata builds inventory systems that help businesses track stock levels, manage product 
+              movement, and maintain full visibility across warehouses and branches. We design solutions that 
+              reduce manual work, prevent stock discrepancies, and support faster and more organized 
+              operations.
+            </p>
+            
+            <p>
+              Our inventory systems allow your team to monitor incoming and outgoing items, set reorder 
+              points, and access real time stock information from anywhere. With clear reporting and 
+              automated tracking, you can reduce delays, avoid overstocking, and make better decisions about 
+              purchasing and distribution.
+            </p>
+            
+            <p>
+              We work closely with operations and logistics teams to understand how products move through 
+              your organization. This helps us create a system that matches your workflow and supports your 
+              operational goals. Whether you manage a single storage area or multiple locations, we design 
+              tools that scale with your needs.
+            </p>
+            
+            <p>
+              With Innodata, your inventory system becomes a reliable foundation for accurate tracking, better 
+              planning, and stronger day to day efficiency across your entire business.
+            </p>
+            
+            <p>
+              <b>Ready to improve your inventory management?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "in-house/cloud hosting (paas & saas)":
+          pageContent.innerHTML = `
+            <h3>Reliable Hosting Solutions for Secure and Scalable Business Operations</h3>
+            
+            <p>
+              Innodata provides hosting solutions that give your business a strong and dependable foundation 
+              for running essential systems and applications. Whether you prefer to manage your own 
+              infrastructure or take advantage of cloud based platforms, we help you create an environment 
+              that is secure, efficient and ready to grow with your needs.
+            </p>
+            
+            <p>
+              Our in house hosting options give you full control over your data and systems while ensuring 
+              stable performance within your own network. For businesses that want flexibility and scalability, 
+              our cloud hosting options through PaaS and SaaS models offer a modern approach without the 
+              hardware and maintenance burdens. We design and manage hosting environments that reduce 
+              downtime, improve access, and enhance the overall reliability of your operations.
+            </p>
+            
+            <p>
+              With expert setup, continuous monitoring, and dedicated support, we make sure your systems 
+              operate smoothly day after day. No matter the size of your organization, our hosting solutions 
+              help you run your business with confidence and minimal disruption.
+            </p>
+            
+            <p>
+              <b>Ready to build a hosting environment that fits your business?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "network design & layout":
+          pageContent.innerHTML = `
+            <h3>Network Designs That Strengthen Connectivity and Keep Your Operations Moving</h3>
+            
+            <p>
+              A dependable network is the backbone of every modern business. Innodata provides network 
+              design and layout services that ensure your organization has a strong, secure, and efficient 
+              infrastructure to support daily operations. We focus on building systems that reduce downtime, 
+              eliminate bottlenecks, and create a smooth flow of data across your entire workplace.
+            </p>
+            
+            <p>
+              Our team studies your physical environment, device requirements, and operational workflow to 
+              create a layout that supports both current and future needs. From structured cabling and router 
+              configurations to wireless coverage planning, we design networks that deliver stable connections 
+              in every area of your office or facility. With proper planning, you gain a network that performs 
+              consistently even as your operations grow.
+            </p>
+            
+            <p>
+              We also prioritize security and performance in every design. By combining the right hardware, 
+              network paths, and traffic management tools, we help you prevent interruptions, protect sensitive 
+              information, and streamline communication between departments and systems.
+            </p>
+            
+            <p>
+              <b>Ready to build a network that keeps your business running at its best?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "systems administration":
+          pageContent.innerHTML = `
+            <h3>System Administration That Keeps Your Technology Stable and Secure</h3>
+            
+            <p>
+              Innodata provides system administration services that keep your business systems running 
+              smoothly, safely, and efficiently. From user account management to system updates and resource 
+              monitoring, we help maintain a stable environment where your team can work without 
+              interruptions. Our goal is to ensure your entire IT setup performs reliably every day.
+            </p>
+            
+            <p>
+              We manage system configurations, performance checks, backups, and routine maintenance so 
+              your hardware and software stay healthy. With proactive monitoring, we detect issues early and 
+              prevent potential disruptions before they affect operations. This creates a more dependable work 
+              environment and reduces unexpected downtime.
+            </p>
+            
+            <p>
+              Security is also a key focus of our administration services. We apply access controls, policy 
+              enforcement, update management, and data protection measures to safeguard your organization 
+              from internal and external risks. With our support, you gain stronger control over systems and a 
+              safer operational framework.
+            </p>
+            
+            <p>
+              <b>Looking for secure and reliable system management?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "server preventive maintenance":
+          pageContent.innerHTML = `
+            <h3>Server Preventive Maintenance That Protects Your Business from Downtime</h3>
+            
+            <p>
+              Innodata provides preventive maintenance services that help keep your servers healthy, stable, 
+              and ready to support your daily operations. By maintaining your infrastructure proactively, we 
+              reduce the chances of system failures, data loss, or unexpected disruptions that can affect your 
+              business. Our goal is to give you a more dependable and secure environment for your critical 
+              applications.
+            </p>
+            
+            <p>
+              We conduct regular inspections, performance checks, cleaning, updates, and hardware 
+              assessments to ensure your servers continue to operate efficiently. This includes monitoring 
+              system resources, applying updates, testing backups, and reviewing logs to identify potential 
+              issues early. With consistent care, your servers remain optimized and less vulnerable to 
+              breakdowns.
+            </p>
+            
+            <p>
+              Our team also ensures that security measures, firmware updates, and backup routines stay up to 
+              date. This strengthens your protection against cyber threats and minimizes operational risks. 
+              With Innodata overseeing your server health, you gain peace of mind knowing your core systems 
+              are running at their best.
+            </p>
+            
+            <p>
+              <b>Want to keep your servers reliable and secure all year round?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "firewall configuration":
+          pageContent.innerHTML = `
+            <h3>Firewall Configuration That Strengthens Your Network Security</h3>
+            
+            <p>
+              Innodata provides firewall configuration services that help protect your systems from 
+              unauthorized access, cyber threats, and internal vulnerabilities. We design and configure firewall 
+              rules that align with your security needs, ensuring your network stays safe while still supporting 
+              smooth business operations.
+            </p>
+            
+            <p>
+              Our team evaluates your current setup, identifies risk points, and builds a clear firewall structure 
+              that filters incoming and outgoing traffic effectively. We manage access permissions, security 
+              policies, monitoring tools, and regular rule updates, giving you stronger control over how 
+              information flows through your network.
+            </p>
+            
+            <p>
+              With continuous review and adjustments, we help maintain a secure and stable environment as 
+              your business grows. From preventing intrusions to minimizing the chances of data breaches, our 
+              firewall configurations serve as a solid defense for your entire infrastructure.
+            </p>
+            
+            <p>
+              <b>Ready to strengthen your network protection?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "bookkeeping":
+          pageContent.innerHTML = `
+            <h3>Bookkeeping Services That Keep Your Financial Records Accurate and Organized</h3>
+            
+            <p>
+              Innodata provides bookkeeping services that help businesses stay on top of their financial activity 
+              with clear, updated, and reliable records. We manage daily transactions, reconcile accounts, and 
+              organize your books so you always know where your business stands financially. Our goal is to 
+              give you clarity and confidence in every decision you make.
+            </p>
+            
+            <p>
+              We maintain accurate ledgers, monitor incoming and outgoing funds, and ensure that all financial 
+              data is recorded properly. This helps reduce errors, prevent inconsistencies, and keep your 
+              reporting in line with accounting standards. With clean and organized books, you can focus more 
+              on running your business rather than managing paperwork.
+            </p>
+            
+            <p>
+              Our team also helps you review financial trends, prepare for audits, and understand the numbers 
+              that drive your operations. Whether you need full service bookkeeping or support for specific 
+              tasks, we tailor our solutions to match your workflow and business needs.
+            </p>
+            
+            <p>
+              <b>Ready to keep your finances accurate and stress free?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "reporting & analytics":
+          pageContent.innerHTML = `
+            <h3>Reporting and Analytics That Turn Your Data Into Clear Business Insights</h3>
+            
+            <p>
+              Innodata provides reporting and analytics services that help you understand your numbers and 
+              make informed decisions with confidence. We organize your financial and operational data into 
+              clear and meaningful reports so you can see how your business is performing at every level.
+            </p>
+            
+            <p>
+              Our team builds customized reports that highlight key trends, track important metrics, and 
+              present information in a format that is easy to read and easy to use. Whether you need detailed 
+              financial statements, performance dashboards, or regular management reports, we deliver 
+              insights that support better planning and stronger execution.
+            </p>
+            
+            <p>
+              We also analyze your data to help you identify opportunities, manage risks, and improve 
+              efficiency across your organization. By turning raw information into actionable insights, we help 
+              you create strategies that align with your goals and move your business forward.
+            </p>
+            
+            <p>
+              <b>Ready to understand your data with greater clarity?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "registration & compliance":
+          pageContent.innerHTML = `
+            <h3>Registration and Compliance Support That Keeps Your Business Fully Aligned With Legal Requirements</h3>
+            
+            <p>
+              Innodata provides registration and compliance services that help businesses meet regulatory 
+              requirements without the stress and confusion that often come with paperwork. We guide you 
+              through the entire process of business registration, renewals, documentation, and compliance 
+              checks to ensure your operations remain fully aligned with government standards.
+            </p>
+            
+            <p>
+              Our team manages filings, verifies requirements, and keeps track of important deadlines so you 
+              never miss a renewal or fall behind on obligations. From business permits and government 
+              registrations to documentation support and compliance updates, we take care of the details that 
+              protect your organization.
+            </p>
+            
+            <p>
+              We also help you understand the regulations that apply to your industry and give you practical 
+              guidance on how to maintain compliance as your business grows. With Innodata, you gain peace 
+              of mind knowing that your business is properly registered, updated, and protected from 
+              unnecessary risks.
+            </p>
+            
+            <p>
+              <b>Ready to keep your business compliant and worry free?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "business process consulting":
+          pageContent.innerHTML = `
+            <h3>Business Process Consulting That Improves Efficiency and Strengthens Your Operations</h3>
+            
+            <p>
+              Innodata offers business process consulting services that help organizations refine how they 
+              work, remove bottlenecks, and create smoother day to day operations. We study your current 
+              workflows, identify gaps, and develop practical solutions that enhance productivity across all 
+              areas of your business.
+            </p>
+            
+            <p>
+              Our team works closely with your departments to understand how tasks move through your 
+              organization. We map out processes, analyze performance, and determine where improvements 
+              can create the most impact. Whether you need to streamline approvals, improve documentation, 
+              or reduce manual work, we design systems that support faster and more consistent results.
+            </p>
+            
+            <p>
+              We also help businesses adopt new practices, set clear standards, and implement tools that 
+              make operations more reliable. With a stronger process foundation, you gain better control of 
+              your performance and a clearer path toward scaling your operations.
+            </p>
+            
+            <p>
+              <b>Ready to improve how your business works every day?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "erp consulting":
+          pageContent.innerHTML = `
+            <h3>ERP Consulting That Helps You Build a Stronger and More Efficient Business System</h3>
+            
+            <p>
+              Innodata provides ERP consulting services that help organizations understand, plan, and 
+              implement systems that support their daily operations. We guide you through every stage from 
+              assessment and preparation to configuration and adoption so that your ERP becomes a reliable 
+              tool for managing your business.
+            </p>
+            
+            <p>
+              Our team works with you to identify pain points, map your workflows, and define the requirements 
+              that matter most to your operations. We make sure your ERP setup matches how your business 
+              works and supports areas such as finance, supply chain, inventory, sales, and human resources 
+              with accuracy and clarity.
+            </p>
+            
+            <p>
+              We also help with process alignment, data preparation, system testing, and user support to 
+              ensure a smooth transition for your entire team. With a well implemented ERP system, you gain 
+              better visibility, stronger control, and a more organized operation that can scale as your business 
+              grows.
+            </p>
+            
+            <p>
+              <b>Ready to build an ERP system that fits your business?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
+          `;
+          break;
+
+        case "education":
+          pageContent.innerHTML = `
+            <h3>Empowering Institutions Through Digital Transformation</h3>
+            
+            <p>
+              Innodata supports educational institutions in modernizing their operations through <b>Microsoft 
+              Dynamics 365 ERP</b> and expert business advisory services. We bring every core function 
+              finance, HR, enrollment, and administration – into a single intelligent system designed to simplify 
+              management and strengthen institutional performance.
+            </p>
+            
+            <p>
+              Our ERP solutions enable real-time data access across departments, helping decision-makers 
+              maintain transparency, track progress, and ensure compliance with academic and government 
+              standards. From automated workflows to detailed reporting, we make it easier to oversee the 
+              entire educational ecosystem.
+            </p>
+            
+            <p>
+              Beyond technology, our <b>Business Management and Advisory Services</b> guide schools and 
+              universities through process optimization, digital adoption, and long-term strategy alignment. We 
+              focus on bridging operational efficiency with educational excellence, empowering your institution 
+              to deliver impactful outcomes for students and stakeholders alike.
+            </p>
+            
+            <p>
+              With Innodata as your partner, your institution gains a scalable digital foundation that promotes 
+              agility, accountability, and continuous improvement, ensuring you're ready to meet the evolving 
+              demands of modern education.
+            </p>
+            
+            <p>
+              <b>Ready to modernize your institution's operations?</b>
+            </p>
+            
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
           `;
           break;
 
@@ -341,7 +1198,7 @@
               Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
               voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
             </p>
-            <a href="contactus.html" class="btn-get-started">Consult Us</a>
+            <a href="contactus.html" class="btn-get-started">Consult With Us</a>
           `;
           break;
       }

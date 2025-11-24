@@ -1,0 +1,35 @@
+/*--------------------------------------------------------------
+# Modern Features Item
+--------------------------------------------------------------*/
+.features-item-modern {
+  background-color: #f0f7ff;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.features-item-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+.features-item-modern .content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  margin-bottom: 20px;
+}
+
+.features-item-modern .content p {
+  line-height: 1.7;
+  color: #444;
+}
+
+.features-item-modern .content .btn-get-started {
+  margin-top: 20px;
+}
+
+.features-item-modern img {
+  border-radius: 10px;
+}

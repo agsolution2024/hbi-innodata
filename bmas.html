@@ -22,6 +22,44 @@
   <link id="mainStylesheet" href="assets/css/mainv4.css?v1.0" rel="stylesheet" />
   <link href="assets/css/other.css?v1.0" rel="stylesheet" />
   <link href="assets/css/enhanced-services.css?v1.0" rel="stylesheet" />
+  <style>
+    :root {
+      --bs-primary: #007cff;
+      --bs-primary-rgb: 0, 124, 255;
+    }
+
+    .text-primary {
+      color: #007cff !important;
+    }
+
+    .bg-primary {
+      background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity, 1)) !important;
+    }
+
+    .btn-primary {
+      background-color: #007cff;
+      border-color: #007cff;
+    }
+
+    .btn-outline-primary {
+      color: #007cff;
+      border-color: #007cff;
+    }
+
+    .btn-outline-primary:hover {
+      background-color: #007cff;
+      border-color: #007cff;
+    }
+
+    .transition-hover {
+      transition: all 0.3s ease;
+    }
+
+    .transition-hover:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    }
+  </style>
 </head>
 
 
@@ -79,80 +117,89 @@
   </header>
 
   <main class="main">
-
-    <div class="page-title dark-background page-title-bmas" data-aos="fade">
-      <div class="heading">
-        <div class="container">
-          <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8" style="background-color: rgba(0, 0, 0, 0.5);">
-              <h2>Business Management & Advisory Services</h2>
-              <p class="mb-0">
-                Odio et unde deleniti. Deserunt numquam exercitationem.
-                Officiis quo odio sint voluptas consequatur ut a odio
-                voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi
-                ratione sint. Sit quaerat ipsum dolorem.
-              </p>
-            </div>
+    <!-- Hero Section -->
+    <div class="page-title dark-background page-title-bmas" data-aos="fade" style="position: relative; overflow: hidden;">
+       <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 60, 130, 0.7);"></div>
+       <div class="heading" style="position: relative; z-index: 2; padding: 120px 0;">
+          <div class="container">
+             <div class="row d-flex justify-content-center text-center">
+                <div class="col-lg-10">
+                   <h1 class="text-white fw-bold mb-4" style="font-size: 3rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">Business Management & Advisory Services</h1>
+                   <p class="mb-0 text-white lead" style="font-size: 1.25rem; text-shadow: 1px 1px 2px rgba(0,0,0,0.3);">
+                      Expert guidance to optimize your business operations, ensure compliance, and drive strategic growth.
+                   </p>
+                </div>
+             </div>
           </div>
-        </div>
-      </div>
+       </div>
     </div>
-    <section id="services" class="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-laptop"></i></div>
-              <h4><a href="">Bookkeeping</a></h4>
-              <p></p>
 
-            </div>
+    <!-- Services Section -->
+    <section id="services" class="services section bg-light">
+       <div class="container">
+          <div class="section-title text-center mb-5">
+             <h2 class="fw-bold text-uppercase text-primary" style="letter-spacing: 2px;">Our Services</h2>
+             <p class="text-muted">Comprehensive management solutions</p>
           </div>
-
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-laptop"></i></div>
-              <h4><a href="">Reporting & Analytics</a></h4>
-              <p></p>
-
-            </div>
+          <div class="row g-4">
+             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon-box h-100 shadow-sm border-0 rounded-3 p-4 bg-white text-center transition-hover">
+                   <a href="page.html?option=Bookkeeping" class="text-decoration-none">
+                      <div class="icon mb-3 d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle" style="width: 64px; height: 64px;">
+                         <i class="bi bi-journal-bookmark fs-3"></i>
+                      </div>
+                      <h4 class="fw-bold text-dark mb-2">Bookkeeping</h4>
+                      <p class="text-muted small mb-0">Accurate financial record keeping.</p>
+                   </a>
+                </div>
+             </div>
+             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon-box h-100 shadow-sm border-0 rounded-3 p-4 bg-white text-center transition-hover">
+                   <a href="page.html?option=Reporting%20%26%20Analytics" class="text-decoration-none">
+                      <div class="icon mb-3 d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle" style="width: 64px; height: 64px;">
+                         <i class="bi bi-graph-up-arrow fs-3"></i>
+                      </div>
+                      <h4 class="fw-bold text-dark mb-2">Reporting & Analytics</h4>
+                      <p class="text-muted small mb-0">Data-driven insights for better decisions.</p>
+                   </a>
+                </div>
+             </div>
+             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon-box h-100 shadow-sm border-0 rounded-3 p-4 bg-white text-center transition-hover">
+                   <a href="page.html?option=Registration%20%26%20Compliance" class="text-decoration-none">
+                      <div class="icon mb-3 d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle" style="width: 64px; height: 64px;">
+                         <i class="bi bi-file-earmark-check fs-3"></i>
+                      </div>
+                      <h4 class="fw-bold text-dark mb-2">Registration & Compliance</h4>
+                      <p class="text-muted small mb-0">Ensuring regulatory adherence.</p>
+                   </a>
+                </div>
+             </div>
+             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="icon-box h-100 shadow-sm border-0 rounded-3 p-4 bg-white text-center transition-hover">
+                   <a href="page.html?option=Business%20Process%20Consulting" class="text-decoration-none">
+                      <div class="icon mb-3 d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle" style="width: 64px; height: 64px;">
+                         <i class="bi bi-gear-wide-connected fs-3"></i>
+                      </div>
+                      <h4 class="fw-bold text-dark mb-2">Business Process Consulting</h4>
+                      <p class="text-muted small mb-0">Optimizing operational workflows.</p>
+                   </a>
+                </div>
+             </div>
+             <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <div class="icon-box h-100 shadow-sm border-0 rounded-3 p-4 bg-white text-center transition-hover">
+                   <a href="page.html?option=ERP%20Consulting" class="text-decoration-none">
+                      <div class="icon mb-3 d-inline-flex align-items-center justify-content-center bg-primary bg-opacity-10 text-primary rounded-circle" style="width: 64px; height: 64px;">
+                         <i class="bi bi-diagram-3 fs-3"></i>
+                      </div>
+                      <h4 class="fw-bold text-dark mb-2">ERP Consulting</h4>
+                      <p class="text-muted small mb-0">Expert ERP implementation strategies.</p>
+                   </a>
+                </div>
+             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-laptop"></i></div>
-              <h4><a href="">Registration & Compliance</a></h4>
-              <p></p>
-
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-laptop"></i></div>
-              <h4><a href="">Business Process Consulting</a></h4>
-              <p></p>
-
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bi bi-laptop"></i></div>
-              <h4><a href="">ERP Consulting</a></h4>
-              <p></p>
-
-            </div>
-          </div>
-
-
-
-        </div>
-
-      </div>
-
+       </div>
     </section>
-
-
   </main>
   <!-- New Enhanced Footer -->
   <footer id="footer-new" class="enhanced-footer">
