@@ -1,47 +1,136 @@
 <?php
-//   $contact->smtp = array(
-//     'host' => 'mail5016.site4now.net',
-//     'username' => 'mailer@ourladyofguadalupeschool.online',
-//     'password' => '!@Passw0rd',
-//     'port' => '8889'
-//   );
-use src\PHPMailer;
-use src\SMTP;
-use src\Exception;
+// Enable error reporting for debugging (remove in production)
+error_reporting(E_ALL);
+ini_set('display_errors', 0);
+ini_set('log_errors', 1);
 
-//Load Composer's autoloader
-// require 'vendor/autoload.php';
+// Load PHPMailer classes
+require_once __DIR__ . '/src/PHPMailer.php';
+require_once __DIR__ . '/src/SMTP.php';
+require_once __DIR__ . '/src/Exception.php';
 
-//Create an instance; passing `true` enables exceptions
-$mail = new PHPMailer(true);
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
 
-try {
-    //Server settings
-    $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      //Enable verbose debug output
-    $mail->isSMTP();                                            //Send using SMTP
-    $mail->Host       = 'mail5016.site4now.net';                     //Set the SMTP server to send through
-    $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'mailer@ourladyofguadalupeschool.online';                     //SMTP username
-    $mail->Password   = '!@Passw0rd';                               //SMTP password
-    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
-    $mail->Port       = 8889;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+// SMTP Configuration - Hostinger
+define('SMTP_HOST', 'smtp.hostinger.com');
+define('SMTP_PORT', 465);
+define('SMTP_USERNAME', 'inquire@innodatasolutions.net'); // Replace with your email
+define('SMTP_PASSWORD', 'P@$$w0rd122028'); // Replace with your password
+define('SMTP_FROM_EMAIL', 'inquire@innodatasolutions.net'); // Replace with your email
+define('SMTP_FROM_NAME', 'Innodata Contact Form');
+define('RECIPIENT_EMAIL', 'inquire@innodatasolutions.net'); // Where to receive emails
 
-    //Recipients
-    $mail->setFrom('test@example.com', 'Mailer');
-    $mail->addAddress('systemdeveloper.paul@gmail.com', 'Joe User');     //Add a recipient
+// Check if form was submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+    // Sanitize and validate input
+    $fname = htmlspecialchars(trim($_POST['fname'] ?? ''));
+    $lname = htmlspecialchars(trim($_POST['lname'] ?? ''));
+    $number = htmlspecialchars(trim($_POST['number'] ?? ''));
+    $email = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
+    $subject = htmlspecialchars(trim($_POST['subject'] ?? 'New Contact Form Submission'));
+    $message = htmlspecialchars(trim($_POST['message'] ?? ''));
 
+    // Validate required fields
+    if (empty($fname) || empty($lname) || empty($email) || empty($message)) {
+        echo 'Please fill in all required fields.';
+        exit;
+    }
 
+    // Validate email
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo 'Invalid email address.';
+        exit;
+    }
 
-    //Content
-    $mail->isHTML(true);                                  //Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'This is the HTML message body <b>in bold!</b>';
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+    //Create an instance; passing `true` enables exceptions
+    $mail = new PHPMailer(true);
 
-    $mail->send();
-    echo 'Message has been sent';
-} catch (Exception $e) {
-    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    try {
+        //Server settings
+        $mail->SMTPDebug = 0;                                       // Disable debug output (set to 2 for testing)
+        $mail->isSMTP();                                            // Send using SMTP
+        $mail->Host       = SMTP_HOST;                              // Set the SMTP server to send through
+        $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+        $mail->Username   = SMTP_USERNAME;                          // SMTP username
+        $mail->Password   = SMTP_PASSWORD;                          // SMTP password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            // Enable SSL encryption
+        $mail->Port       = SMTP_PORT;                              // TCP port to connect to
+
+        //Recipients
+        $mail->setFrom(SMTP_FROM_EMAIL, SMTP_FROM_NAME);
+        $mail->addAddress(RECIPIENT_EMAIL);                         // Add a recipient
+        $mail->addReplyTo($email, "$fname $lname");                // Reply to customer
+
+        //Content
+        $mail->isHTML(true);                                        // Set email format to HTML
+        $mail->Subject = $subject;
+        
+        // Create HTML email body
+        $mail->Body = "
+        <html>
+        <head>
+            <style>
+                body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+                .container { max-width: 600px; margin: 0 auto; padding: 20px; }
+                .header { background-color: #007cff; color: white; padding: 20px; text-align: center; }
+                .content { background-color: #f9f9f9; padding: 20px; }
+                .field { margin-bottom: 15px; }
+                .label { font-weight: bold; color: #007cff; }
+                .footer { text-align: center; padding: 20px; font-size: 12px; color: #666; }
+            </style>
+        </head>
+        <body>
+            <div class='container'>
+                <div class='header'>
+                    <h2>New Contact Form Submission</h2>
+                </div>
+                <div class='content'>
+                    <div class='field'>
+                        <span class='label'>Name:</span> $fname $lname
+                    </div>
+                    <div class='field'>
+                        <span class='label'>Email:</span> $email
+                    </div>
+                    <div class='field'>
+                        <span class='label'>Contact Number:</span> $number
+                    </div>
+                    <div class='field'>
+                        <span class='label'>Subject:</span> $subject
+                    </div>
+                    <div class='field'>
+                        <span class='label'>Message:</span><br>
+                        " . nl2br($message) . "
+                    </div>
+                </div>
+                <div class='footer'>
+                    This email was sent from the Innodata contact form.
+                </div>
+            </div>
+        </body>
+        </html>
+        ";
+        
+        // Plain text version
+        $mail->AltBody = "New Contact Form Submission\n\n" .
+                        "Name: $fname $lname\n" .
+                        "Email: $email\n" .
+                        "Contact Number: $number\n" .
+                        "Subject: $subject\n\n" .
+                        "Message:\n$message\n\n" .
+                        "This email was sent from the Innodata contact form.";
+
+        $mail->send();
+        echo 'OK';
+        
+    } catch (Exception $e) {
+        echo "Message could not be sent. Error: {$mail->ErrorInfo}";
+    }
+    
+} else {
+    echo 'Invalid request method.';
 }
 
 
