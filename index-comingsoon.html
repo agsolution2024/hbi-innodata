@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Coming Soon - Innodata</title>
+  <meta name="description" content="Exciting things are coming soon from Innodata Business & Software Solutions" />
+  <meta name="keywords" content="innodata, coming soon, business solutions, software" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://innodatasolutions.net" />
+  <meta property="og:title" content="Coming Soon - Innodata" />
+  <meta property="og:description" content="Exciting things are coming soon from Innodata Business & Software Solutions" />
+  <meta property="og:image" content="https://innodatasolutions.net/assets/img/innodatanewlogosmall.webp" />
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://innodatasolutions.net" />
+  <meta property="twitter:title" content="Coming Soon - Innodata" />
+  <meta property="twitter:description" content="Exciting things are coming soon from Innodata Business & Software Solutions" />
+  <meta property="twitter:image" content="https://innodatasolutions.net/assets/img/innodatanewlogosmall.webp" />
+  
+  <link href="assets/img/innodatanewlogosmall.webp" rel="icon" />
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+  <style>
+    :root {
+      --primary-color: #007cff;
+      --secondary-color: #444444;
+      --light-bg: #f4f5fe;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Cairo", "Poppins", sans-serif;
+      background: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Main Container */
+    .coming-soon-container {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      padding: 2rem;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    /* Logo */
+    .logo-container {
+      margin-bottom: 3rem;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .logo-container img {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
+    }
+
+    /* Content */
+    .content {
+      background: #ffffff;
+      border-radius: 20px;
+      padding: 4rem 3rem;
+      box-shadow: 0 10px 40px rgba(0, 124, 255, 0.1);
+      border: 1px solid #f0f0f0;
+      animation: fadeInUp 1s ease-out 0.3s both;
+    }
+
+    .content h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: var(--primary-color);
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .content h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+      color: var(--secondary-color);
+      margin-bottom: 2rem;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      color: var(--secondary-color);
+      margin-bottom: 3rem;
+      line-height: 1.8;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Contact Info */
+    .contact-info {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      color: var(--secondary-color);
+      font-size: 1.1rem;
+    }
+
+    .contact-item i {
+      font-size: 1.5rem;
+      color: var(--primary-color);
+    }
+
+    /* Social Links */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      background: var(--primary-color);
+      color: white;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .social-link:hover {
+      background: #0059b8;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 20px rgba(0, 124, 255, 0.4);
+    }
+
+    /* CTA Button */
+    .cta-button {
+      display: inline-block;
+      padding: 1rem 3rem;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 30px rgba(0, 124, 255, 0.3);
+      margin-top: 1rem;
+    }
+
+    .cta-button:hover {
+      background: #0059b8;
+      transform: translateY(-3px);
+      box-shadow: 0 15px 40px rgba(0, 124, 255, 0.4);
+      color: white;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .content {
+        padding: 3rem 2rem;
+      }
+
+      .content h1 {
+        font-size: 2.5rem;
+      }
+
+      .content h2 {
+        font-size: 1.2rem;
+      }
+
+      .contact-info {
+        gap: 1.5rem;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .logo-container img {
+        max-width: 200px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .content h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Main Container -->
+  <div class="coming-soon-container">
+    <!-- Logo -->
+    <div class="logo-container">
+      <img src="assets/img/innodatalogonew.webp" alt="Innodata Logo" />
+    </div>
+
+    <!-- Content -->
+    <div class="content" data-aos="fade-up">
+      <h1>Coming Soon</h1>
+      <h2>Something Exciting is on the Way!</h2>
+      <p>
+        We're working hard to bring you an amazing new experience. 
+        Our team is crafting innovative solutions that will transform the way you do business.
+        Stay tuned for the launch!
+      </p>
+
+      <!-- Contact Info -->
+      <div class="contact-info" data-aos="fade-up" data-aos-delay="500">
+        <div class="contact-item">
+          <i class="bi bi-telephone"></i>
+          <span>(02) 8693 6034</span>
+        </div>
+        <div class="contact-item">
+          <i class="bi bi-envelope"></i>
+          <span>inquire@innodatasolutions.net</span>
+        </div>
+      </div>
+
+      <!-- Social Links -->
+      <div class="social-links" data-aos="fade-up" data-aos-delay="700">
+        <a href="https://www.facebook.com/profile.php?id=61586780607517" class="social-link facebook" aria-label="Facebook">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/innodata_solutions/" class="social-link instagram" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/innodatasolutions/posts/?feedView=all" class="social-link linkedin" aria-label="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  </script>
+</body>
+
+</html>
