@@ -1,12 +1,12 @@
 body {
-  font-family: "Cairo", "ArialRoundedMTBold", Arial, sans-serif !important;
+  font-family: "Poppins", "Cairo", Arial, sans-serif !important;
 }
 
 /* Fonts */
 :root {
-  --default-font: "Cairo", "ArialRoundedMTBold", Arial, sans-serif;
-  --heading-font: "Cairo", "ArialRoundedMTBold", Arial, sans-serif;
-  --nav-font: "Cairo", "ArialRoundedMTBold", Arial, sans-serif;
+  --default-font: "Poppins", "Cairo", Arial, sans-serif;
+  --heading-font: "Poppins", "Cairo", Arial, sans-serif;
+  --nav-font: "Poppins", "Cairo", Arial, sans-serif;
 }
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
@@ -233,7 +233,7 @@ h6 {
      color: #444444 !important; 
     font-size: 15px;
     padding: 0 2px;
-    font-family: "Cairo", "ArialRoundedMTBold", Arial, sans-serif;
+    font-family: "Poppins", "Cairo", Arial, sans-serif !important;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -499,7 +499,7 @@ h6 {
   font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Cairo", "ArialRoundedMTBold", Arial, sans-serif !important;
+  font-family: "Poppins", "Cairo", Arial, sans-serif !important;
 }
 
 #footer .footer-top .social-links a {
@@ -1969,7 +1969,7 @@ section,
 }
 
 .cta .cta-btn {
-  font-family: "Cairo", "ArialRoundedMTBold", Arial, sans-serif !important;
+  font-family: "Poppins", "Cairo", Arial, sans-serif !important;
   font-weight: 600;
   font-size: 14px;
   letter-spacing: 1px;
